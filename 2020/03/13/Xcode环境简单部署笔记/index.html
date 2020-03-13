@@ -20,19 +20,19 @@
     var CONFIG = {"hostname":"lios.cn","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="做一条最闲的咸鱼">
+  <meta name="description" content="Xcode被破坏，重装后需要安装一些环境，写个笔记记录一下，以后安装不用再去看各个Wiki 1.安装最新版theos，有安装直接跳过 1sudo git clone --recursive https:&#x2F;&#x2F;github.com&#x2F;theos&#x2F;theos.git &#x2F;opt&#x2F;theos 2.重新安装MonkeyDev，Xcode打开，可以创建M">
 <meta property="og:type" content="article">
-<meta property="og:title" content="测试1">
-<meta property="og:url" content="http://lios.cn/2020/03/02/%E6%B5%8B%E8%AF%951/index.html">
+<meta property="og:title" content="Xcode环境简单部署笔记">
+<meta property="og:url" content="http://lios.cn/2020/03/13/Xcode%E7%8E%AF%E5%A2%83%E7%AE%80%E5%8D%95%E9%83%A8%E7%BD%B2%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="iPanda">
-<meta property="og:description" content="做一条最闲的咸鱼">
+<meta property="og:description" content="Xcode被破坏，重装后需要安装一些环境，写个笔记记录一下，以后安装不用再去看各个Wiki 1.安装最新版theos，有安装直接跳过 1sudo git clone --recursive https:&#x2F;&#x2F;github.com&#x2F;theos&#x2F;theos.git &#x2F;opt&#x2F;theos 2.重新安装MonkeyDev，Xcode打开，可以创建M">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-03-02T14:10:12.000Z">
-<meta property="article:modified_time" content="2020-03-02T14:10:12.782Z">
+<meta property="article:published_time" content="2020-03-13T06:25:56.000Z">
+<meta property="article:modified_time" content="2020-03-13T08:01:40.037Z">
 <meta property="article:author" content="iPananBoy">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://lios.cn/2020/03/02/%E6%B5%8B%E8%AF%951/">
+<link rel="canonical" href="http://lios.cn/2020/03/13/Xcode%E7%8E%AF%E5%A2%83%E7%AE%80%E5%8D%95%E9%83%A8%E7%BD%B2%E7%AC%94%E8%AE%B0/">
 
 
 <script id="page-configurations">
@@ -44,7 +44,7 @@
   };
 </script>
 
-  <title>测试1 | iPanda</title>
+  <title>Xcode环境简单部署笔记 | iPanda</title>
   
 
 
@@ -149,7 +149,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://lios.cn/2020/03/02/%E6%B5%8B%E8%AF%951/">
+    <link itemprop="mainEntityOfPage" href="http://lios.cn/2020/03/13/Xcode%E7%8E%AF%E5%A2%83%E7%AE%80%E5%8D%95%E9%83%A8%E7%BD%B2%E7%AC%94%E8%AE%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -162,7 +162,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          测试1
+          Xcode环境简单部署笔记
         </h1>
 
         <div class="post-meta">
@@ -171,8 +171,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2020-03-02 22:10:12" itemprop="dateCreated datePublished" datetime="2020-03-02T22:10:12+08:00">2020-03-02</time>
+              <time title="创建时间：2020-03-13 14:25:56 / 修改时间：16:01:40" itemprop="dateCreated datePublished" datetime="2020-03-13T14:25:56+08:00">2020-03-13</time>
             </span>
 
           
@@ -186,7 +187,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        
+        <p><strong>Xcode被破坏，重装后需要安装一些环境，写个笔记记录一下，以后安装不用再去看各个Wiki</strong></p>
+<p>1.安装最新版<a href="https://github.com/theos/theos/wiki/Installation" target="_blank" rel="noopener" title="theos">theos</a>，有安装直接跳过</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo git clone --recursive https:&#x2F;&#x2F;github.com&#x2F;theos&#x2F;theos.git &#x2F;opt&#x2F;theos</span><br></pre></td></tr></table></figure>
+<p>2.重新安装<a href="https://github.com/AloneMonkey/MonkeyDev/wiki" target="_blank" rel="noopener" title="MonkeyDev">MonkeyDev</a>，Xcode打开，可以创建MonkeyApp了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo &#x2F;bin&#x2F;sh -c &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;AloneMonkey&#x2F;MonkeyDev&#x2F;master&#x2F;bin&#x2F;md-install)&quot;</span><br></pre></td></tr></table></figure>
+<p>3.安装<a href="https://github.com/HikariObfuscator/Hikari" target="_blank" rel="noopener" title="Hikari">Hikari</a>，下载<a href="https://github.com/HikariObfuscator/Hikari/releases/download/20190327/HikariObfuscatorInstaller-2019.03.27.pkg" target="_blank" rel="noopener">pkg</a>安装</p>
+<p>张总还有一个<a href="https://github.com/HikariObfuscator/Hanabi" target="_blank" rel="noopener" title="Hanabi">Hanabi</a>,请看另外一篇</p>
+
     </div>
 
     
@@ -200,11 +208,11 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2020/03/02/%E6%B5%8B%E8%AF%95/" rel="prev" title="测试">
-      <i class="fa fa-chevron-left"></i> 测试
-    </a></div>
       <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/13/Hikari%20&%20Hanabi%E5%AE%89%E8%A3%85%E7%AC%94%E8%AE%B0/" rel="next" title="Hikari & Hanabi安装笔记">
+      Hikari & Hanabi安装笔记 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
