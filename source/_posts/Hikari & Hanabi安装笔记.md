@@ -1,8 +1,8 @@
-
 ---
 title: Hikari & Hanabi安装笔记
 date: 2020-03-13 15:25:32
-tags:
+categories: iOS
+tags: [iOS,逆向]
 ---
 
 # [Hikari](https://github.com/HikariObfuscator/Hikari "Hikari")

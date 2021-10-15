@@ -1,7 +1,8 @@
 ---
 title: Xcode环境简单部署笔记
 date: 2020-03-13 14:25:56
-tags:
+categories: programming
+tags: [iOS,逆向]
 ---
 
 **Xcode被破坏，重装后需要安装一些环境，写个笔记记录一下，以后安装不用再去看各个Wiki**

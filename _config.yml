@@ -64,6 +64,9 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  编程: programming
+  生活: life
+  其他: other
 tag_map:
 
 # Metadata elements
@@ -96,7 +99,7 @@ ignore:
 theme: next_iPanda
 
 leancloud_counter_security:
-  enable_sync:true
+  enable_sync: true
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
