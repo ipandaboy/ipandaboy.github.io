@@ -107,6 +107,7 @@ leancloud_counter_security:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  token: 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
+  # token: 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
   repo: git@github.com:ipandaboy/ipandaboy.github.io.git
+  # repo: https://github.com/ipandaboy/ipandaboy.github.io
   branch: master
