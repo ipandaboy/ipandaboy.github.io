@@ -20,19 +20,23 @@
     var CONFIG = {"hostname":"ipandaboy.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="做一条最闲的咸鱼">
-<meta property="og:type" content="website">
-<meta property="og:title" content="关于">
-<meta property="og:url" content="http://ipandaboy.github.io/about/index.html">
+  <meta name="description" content="获取IPA包出来混最重要的是什么？是出来。逆向App最重要的是什么？是App！！！ 那么App哪里来呢？  自己写的App，源代码编译出来的是没有加壳的，可以直接用来分析  App Store，TestFlight上的，需要砸壳，之前一键砸壳有详细介绍  别人分享的ipa包，直接下载  网站上的点击安装，实际就是下载一个plist文件，里面有指向ipa的地址   如何从第4种方式拿到我们所要的ip">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MonkeyDev简单使用">
+<meta property="og:url" content="http://ipandaboy.github.io/2021/10/17/MonkeyDev%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="iPandaBoy">
-<meta property="og:description" content="做一条最闲的咸鱼">
+<meta property="og:description" content="获取IPA包出来混最重要的是什么？是出来。逆向App最重要的是什么？是App！！！ 那么App哪里来呢？  自己写的App，源代码编译出来的是没有加壳的，可以直接用来分析  App Store，TestFlight上的，需要砸壳，之前一键砸壳有详细介绍  别人分享的ipa包，直接下载  网站上的点击安装，实际就是下载一个plist文件，里面有指向ipa的地址   如何从第4种方式拿到我们所要的ip">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-10-15T07:14:44.000Z">
-<meta property="article:modified_time" content="2021-10-15T07:16:18.240Z">
+<meta property="og:image" content="http://ipandaboy.github.io/images/monekyDemo.png">
+<meta property="article:published_time" content="2021-10-17T08:51:40.000Z">
+<meta property="article:modified_time" content="2021-10-17T09:48:50.603Z">
 <meta property="article:author" content="iPandaBoy">
+<meta property="article:tag" content="iOS">
+<meta property="article:tag" content="逆向">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://ipandaboy.github.io/images/monekyDemo.png">
 
-<link rel="canonical" href="http://ipandaboy.github.io/about/">
+<link rel="canonical" href="http://ipandaboy.github.io/2021/10/17/MonkeyDev%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/">
 
 
 <script id="page-configurations">
@@ -40,13 +44,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>关于 | iPandaBoy
-</title>
+  <title>MonkeyDev简单使用 | iPandaBoy</title>
   
 
 
@@ -159,43 +162,158 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
-          <div class="content page posts-expand">
+          <div class="content post posts-expand">
             
 
     
-    
-    
-    <div class="post-block" lang="zh-CN">
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ipandaboy.github.io/2021/10/17/MonkeyDev%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="iPandaBoy">
+      <meta itemprop="description" content="做一条最闲的咸鱼">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iPandaBoy">
+    </span>
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          MonkeyDev简单使用
+        </h1>
 
-<h1 class="post-title" itemprop="name headline">关于
-</h1>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
 
-<div class="post-meta">
+              <time title="创建时间：2021-10-17 16:51:40 / 修改时间：17:48:50" itemprop="dateCreated datePublished" datetime="2021-10-17T16:51:40+08:00">2021-10-17</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/iOS%E9%80%86%E5%90%91%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E6%94%BE%E5%BC%83/" itemprop="url" rel="index"><span itemprop="name">iOS逆向从入门到放弃</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">评论数：</span>
+    
+    <a title="valine" href="/2021/10/17/MonkeyDev%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/10/17/MonkeyDev%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
   
 
-</div>
+        </div>
+      </header>
 
-</header>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-      
-      
-      <div class="post-body">
-          
-      </div>
-      
-      
-      
+        <h1 id="获取IPA包"><a href="#获取IPA包" class="headerlink" title="获取IPA包"></a>获取IPA包</h1><p>出来混最重要的是什么？是出来。逆向App最重要的是什么？是App！！！</p>
+<p>那么App哪里来呢？</p>
+<ol>
+<li><p>自己写的App，源代码编译出来的是没有加壳的，可以直接用来分析</p>
+</li>
+<li><p>App Store，TestFlight上的，需要砸壳，之前<a href="https://ipandaboy.github.io/2020/03/17/%E4%B8%80%E9%94%AE%E7%A0%B8%E5%A3%B3/">一键砸壳</a>有详细介绍</p>
+</li>
+<li><p>别人分享的ipa包，直接下载</p>
+</li>
+<li><p>网站上的点击安装，实际就是下载一个plist文件，里面有指向ipa的地址</p>
+</li>
+</ol>
+<p>如何从第4种方式拿到我们所要的ipa包呢？？？</p>
+<p>1.通过抓包形式</p>
+<p>通过Charles或Thor抓到plist内容，查看ipa的实际地址</p>
+<p>通过谷歌浏览器Chrome抓到plist内容，查看ipa实际地址</p>
+<p>2.使用<a target="_blank" rel="noopener" href="https://github.com/SmileZXLee/IpaDownloadTool">IpaDownloadTool</a>下载ipa包</p>
+<h1 id="MonkeyDev"><a href="#MonkeyDev" class="headerlink" title="MonkeyDev"></a>MonkeyDev</h1><p>未安装MonkeyDev的请查看<a target="_blank" rel="noopener" href="https://github.com/AloneMonkey/MonkeyDev/wiki">Wiki</a>进行安装或者直接执行下面命令安装</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /bin/sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/AloneMonkey/MonkeyDev/master/bin/md-install)&quot;</span><br></pre></td></tr></table></figure>
+
+<p>新建MonekyApp，把app包放到TargetApp文件夹里面，运行到真机上，就相当于重签了</p>
+<p><img src="/images/monekyDemo.png"></p>
+<p>修改一下pch的路径，不修改也可以运行</p>
+<p>首先我们从UI入手，打开Reveal，可以查看到运行的App</p>
+<p>因为MonkeyDev用的<code>RevealServer.framework</code>不是最新的，最新版的Reveal无法查看App，需要替换，Reveal替换 <code>/opt/MonkeyDev/Frameworks的RevealServer.framework</code></p>
+<p>查看我们要hook的界面是属于哪个界面, 是属于<code>NewMainFrameViewController</code></p>
+<p>那怎么写代码呢？看一下MonkeyApp的项目结构吧，此处省略几百字介绍，在<a target="_blank" rel="noopener" href="https://github.com/AloneMonkey/MonkeyDev/wiki">MonekDev</a>上都有，直接上<a href="">Demo</a></p>
+<p>有个很好的功能，把MDConfig.plist里面的BaseMsgContentViewController改成我们的NewMainFrameViewController，再次运行一下，可以看到控制台输入很多东西，其他有viewDidLoad，说明他是执行过此函数，那我们在这个函数里面搞事吧</p>
+<p>主要代码是写在testDylib.xm上，用logo的写法，需要把testDylib.xm的type改成Object-c</p>
+<p>++ Source 才可以下断点调试，不建议在此写代码。</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">%hook NewMainFrameViewController</span><br><span class="line">-(void)viewDidLoad&#123;</span><br><span class="line">    %orig;//执行之前的效果代码</span><br><span class="line">    //HookCode</span><br><span class="line">&#125;</span><br><span class="line">%end</span><br></pre></td></tr></table></figure>
+
+
+
+<p>改用Swizzed的方式，导入两个NSObject+HKMethodSwizzed.h，NSObject+HKMethodSwizzed.m就可以直接写Hook了</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[NSObject hk_hookInstanceMethod:[NewMainFrameViewControllerHooker class] originalClass:NSClassFromString(@&quot;NewMainFrameViewController&quot;) swizzledSelector:@selector(wxhk_viewDidLoad) originalSelector:@selector(viewDidLoad)];</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">-(void)wxhk_viewDidLoad&#123;</span><br><span class="line">    [self wxhk_viewDidLoad];//执行之前的效果代码</span><br><span class="line">    //HookCode</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
     </div>
-    
 
     
     
     
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/iOS/" rel="tag"># iOS</a>
+              <a href="/tags/%E9%80%86%E5%90%91/" rel="tag"># 逆向</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/10/17/%E5%9C%A8Mac%E4%B8%8A%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" rel="prev" title="在Mac上使用Hexo搭建个人博客">
+      <i class="fa fa-chevron-left"></i> 在Mac上使用Hexo搭建个人博客
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
 
 
           </div>
@@ -247,6 +365,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96IPA%E5%8C%85"><span class="nav-number">1.</span> <span class="nav-text">获取IPA包</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#MonkeyDev"><span class="nav-number">2.</span> <span class="nav-text">MonkeyDev</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
