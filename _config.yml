@@ -65,8 +65,10 @@ index_generator:
 default_category: uncategorized
 category_map:
   编程: programming
-  生活: life
+  工具: tool
   其他: other
+  逆向: iOSre
+  生活: life
 tag_map:
 
 # Metadata elements

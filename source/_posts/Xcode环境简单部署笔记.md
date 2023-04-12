@@ -8,11 +8,12 @@ tags: [iOS,逆向]
 **Xcode被破坏，重装后需要安装一些环境，写个笔记记录一下，以后安装不用再去看各个Wiki**
 
 1.安装最新版[theos](https://github.com/theos/theos/wiki/Installation "theos")，有安装直接跳过
-```
+
+```shell
 sudo git clone --recursive https://github.com/theos/theos.git /opt/theos
 ```
 2.重新安装[MonkeyDev](https://github.com/AloneMonkey/MonkeyDev/wiki "MonkeyDev")，Xcode打开，可以创建MonkeyApp了
-```
+```shell
 sudo /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/AloneMonkey/MonkeyDev/master/bin/md-install)"
 ```
 
